@@ -84,9 +84,5 @@
 
 </div>
 
-<div>
-<h2>Screenshots</h2>
+## Screenshots
 ![ss](./screenshot/ss.png)
-
-
-</div>
