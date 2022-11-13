@@ -86,6 +86,7 @@
 
 <div>
 <h2>Screenshots</h2>
-![](./screenshot/ss.png)
+![ss](https://user-images.githubusercontent.com/77066770/201532320-c28d3a69-c4c9-4ff3-9764-05011890ea59.png)
+
 
 </div>
