@@ -1,6 +1,8 @@
 import java.util.Scanner;
 public class Balls {
 
+    //using merge sort
+    // time complexity for merge sort is : O(nlogn)
     public static void mergeSort(int[] input){
         merging(input,0,input.length-1);
     }
@@ -59,30 +61,35 @@ public class Balls {
 
     public static void main(String[] args) {
         Scanner sc= new Scanner(System.in);
+        //take input for number of elements for array
+        System.out.println("Enter total no. of balls in red balls' bag: ");
         int n=sc.nextInt();
         int arr[]= new int[n];
+
+        // input array
+        System.out.println("Enter the labels of the balls: ");
         for(int i=0;i<n;i++){
             arr[i]=sc.nextInt();
         }
 
+        //sort the array
         mergeSort(arr);
+
+        // finding the missing and the repeating labels.
         int tmp1=0;
         int tmp2=0;
         for (int i=0;i<n;i++){
             if (arr[i]!=i+1){
                 tmp1=i+1;
             }
+            if (i<(n-1) && arr[i]==arr[i+1]){
+                tmp2=arr[i];
+            }
         }
         System.out.println("Missing = "+ tmp1);
-
-        int j=0;
-        while(j<n){
-            if (j<(n-1) && arr[j]==arr[j+1]){
-                tmp2=arr[j];
-            }
-            j++;
-        }
         System.out.println("repeating = "+tmp2);
 
     }
 }
+
+// time complexity: O(n) because the for loops will run n times (n is size of array)
