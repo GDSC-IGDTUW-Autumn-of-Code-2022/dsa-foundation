@@ -96,7 +96,7 @@
 ## Screenshot
 ![ss](./screenshot/ss.png)
 
-## Reference
+## References
 - [Leetcode Solution](https://leetcode.com/problems/majority-element/solution/)
 - [GeeksForGeeks](https://www.geeksforgeeks.org/majority-element/)
 - [TakeUForward](https://www.youtube.com/watch?v=AoX3BPWNnoE)
