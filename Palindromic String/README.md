@@ -60,6 +60,7 @@ When x is even, we will traverse till y and append the disctint characters in ou
 After traversing till y, we will traverse till x//2 to append 1 character (in this case "a") in the array s. 
 Now we will reverse the given s and store it in l  and append l's elements in the end of s.  
 
+
 elif (x%2==0):
         for i in range(0,y):
             s.append(chr(i+97))
