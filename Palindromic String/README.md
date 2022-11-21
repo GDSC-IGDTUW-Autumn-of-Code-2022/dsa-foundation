@@ -7,7 +7,7 @@ In the above given question, given integers X and Y, we need to generate a palin
 So to solve this given problem, I took all the cases including the edge cases that we will have to tackle in the given problem statement. 
 We also initialized an array s to append the result in it. 
 
-### Different Steps'
+### Different Steps
 
 **x=length of string** 
 
@@ -15,7 +15,7 @@ We also initialized an array s to append the result in it.
 
 #### Step 1 (Case 1) 
 
-When y==1, so only 1 uniue character and x!=1, in that case I can print a certain character x times. In this case, I have printed "a".
+When y==1, so only 1 unique character and x!=1, in that case I can print a certain character x times. In this case, I have printed "a".
 
 if y==1 and x!=1:
         for i in range(x):
@@ -30,7 +30,7 @@ elif x==1:
 
 #### Step 3 (Case 3)
 
-When x==y, we can't have a palindrome as all uniqye characters would equla to the length of string, so output = -1. 
+When x==y, we can't have a palindrome as all uniqye characters would equal to the length of string, so output = -1. 
 
 elif (x==y):
         print(-1)
@@ -75,7 +75,7 @@ elif (x%2==0):
 
 When x is odd, we will traverse till y and append the disctint characters in our string (like a, b, c .....)
 
-After traversing till y, we will traverse till x//2 to append 1 character (in this case "a") in the array s. 
+After traversing till y, we will traverse till half of x to append 1 character (in this case "a") in the array s. 
 Now we will reverse the given s and store it in l  and append l's elements in the end of s.
 
     elif x!=1 and x%2!=0:
