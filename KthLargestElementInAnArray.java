@@ -5,11 +5,12 @@ public class KthLargestElementInAnArray {
         int[] nums1 = {3,2,1,5,6,4};
         int k1 = 2;
         System.out.println(Arrays.toString(nums1) + "," + k1 + " -> " + findKthLargest(nums1, k1));
+        //Answer is 5
 
         int[] nums2 = {1,2,7,5,6,9};
         int k2 = 1;
         System.out.println(Arrays.toString(nums2) + "," + k2 + " -> " + findKthLargest(nums2, k2));
-
+        //Answer is 9
     }
 
     public static int findKthLargest(int[] nums, int k) {
