@@ -26,7 +26,7 @@ or not, and then return it in the IsSymmetric function
 If both left and right side of root are None, we will return True. 
 
 
-if p is None and q is None:
+    if p is None and q is None:
 
                 return True
 
@@ -35,7 +35,7 @@ if p is None and q is None:
 If only One of them is None, we will return False. (as it will be case of unsymmetric tree)
 
 
-if p is None or q is None:
+    if p is None or q is None:
 
                 return False 
 
@@ -45,7 +45,7 @@ Then we will check whether the left and right values of root are same or not, if
 the left and right side is Mirror, or not. Else we will return False 
 
 
-if p.val==q.val:
+    if p.val==q.val:
 
                     return symmetric(p.left,q.right) and symmetric(p.right,q.left)
                 else:
