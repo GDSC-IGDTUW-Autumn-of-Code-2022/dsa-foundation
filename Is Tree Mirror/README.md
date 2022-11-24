@@ -25,15 +25,31 @@ or not, and then return it in the IsSymmetric function
 
 If both left and right side of root are None, we will return True. 
 
+if p is None and q is None:
+
+                return True
+
 **Case 2** 
 
 If only One of them is None, we will return False. (as it will be case of unsymmetric tree)
+
+if p is None or q is None:
+
+                return False 
 
 **Case 3** 
 
 Then we will check whether the left and right values of root are same or not, if they are same we will recursively check whether 
 the left and right side is Mirror, or not. Else we will return False 
 
+if p.val==q.val:
+
+                    return symmetric(p.left,q.right) and symmetric(p.right,q.left)
+                else:
+                
+                    return False
+
+Finally we will return this function for root's left and right portion. 
 
 
 
