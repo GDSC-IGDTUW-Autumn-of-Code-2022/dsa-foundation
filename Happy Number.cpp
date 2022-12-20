@@ -17,5 +17,5 @@ using namespace std;
                 val = val/10;}
             n = sumD;
             }
-        cout<<n==1;
+        cout<<(n==1);
     }
